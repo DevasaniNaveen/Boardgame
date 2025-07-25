@@ -29,9 +29,9 @@ metadata: # Metadata of the resource kind we are creating
 spec:
   selector:
     app: boardgame
-  type: NodePort
+  type: LoadBalancer
   ports:
     - protocol: "TCP"
       port: 80
       targetPort: 8080
-      nodePort: 30080 
+  
